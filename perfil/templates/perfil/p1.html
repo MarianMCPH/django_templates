@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Perfil 1{% endblock %}
+
+{% block content %}
+        <h1>Perfil 1</h1>
+        <ul>
+            <li>Nombre: {{nombre}}</li>
+            <li>Año: {{año}}</li>
+            <li>Correo: {{correo}}</li>
+        </ul>
+
+        <img src="{% static 'images/daisy.webp' %}" alt="Perfil 1" width="200">
+{% endblock %}

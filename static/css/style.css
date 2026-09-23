@@ -1,5 +1,5 @@
 body{
-    color: rgb(88, 78, 226);
+    background-color: rgb(199, 200, 241);
     font-family: Arial, sans-serif;
 }
 nav ul {
@@ -15,4 +15,11 @@ nav ul li {
 footer {
     margin-top: 20px;
     text-align: center;
+}
+
+h1{
+    font-family: "Updock", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
 }

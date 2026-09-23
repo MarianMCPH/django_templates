@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Perfil 2{% endblock %}
+
+{% block content %}
+        <h1>Perfil 2</h1>
+        <ul>
+            <li>Nombre: {{nombre}}</li>
+            <li>Año: {{año}}</li>
+            <li>Correo: {{correo}}</li>
+        </ul>
+
+        <img src="{% static 'images/' %}{{foto}}" alt="Perfil 1" width="200">
+
+        <br>
+        <br>
+        
+        <a class="btn btn-outline-dark" href="{% url 'perfil:p1' %}">Volver al perfil 1</a>
+
+{% endblock %}

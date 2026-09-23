@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Django Templates{% endblock %}</title>
     {% load static %}</title>
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,6 +20,8 @@
                 <li><a href="{% url 'inicio:index' %}">Inicio</a></li>
                 <li><a href="{% url 'app1:v1' %}">App1 - V1</a></li>
                 <li><a href="{% url 'app1:v2' %}">App1 - V2</a></li>
+                <li><a href="{% url 'perfil:p1' %}">Perfil 1</a></li>
+                <li><a href="{% url 'perfil:p2' %}">Perfil 2</a></li>
             </ul>
         </nav>
     </header>
